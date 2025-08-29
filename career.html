@@ -1,146 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-</head>
-<body>
-  <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
-  <a class="navbar-brand d-flex align-items-center" href="#">
-    <img src="img/title_logo.jpg" alt="Logo" height="40" class="mr-2 ">
-    <span class="font-weight-bold">TCPL</span>
-  </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career</title>
+    <link rel="icon" href="img/title_logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top"
+    >
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/title_logo.jpg" alt="Logo" height="40" class="mr-2" />
+      </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active"><a class="nav-link text-white" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="service.html">Service</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#">Career</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-  <!-- Header -->
-  <div class="containerServ text-center">
-    <h1 class="display-4 font-weight-bold">Build Your Future with TCPL</h1>
-    <p>Join our team of innovators, builders, and problem-solvers shaping tomorrow's infrastructure.</p>
-  </div>
-
-  <!-- Why Work With Us -->
-  <div class="py-5">
-    <div class="container text-center">
-      <h2>Why Work With Us</h2>
-      <p>At TCPL, we don’t just build roads, bridges, and projects — we build opportunities. 
-         We believe in teamwork, innovation, and integrity. Whether you are an engineer, 
-         project manager, or site worker, your contribution makes a difference.</p>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active newnav">
+            <a class="nav-link text-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="containerServ text-center">
+      <h1 class="display-4 font-weight-bold">Build Your Future with TCPL</h1>
+      <p>
+        Join our team of innovators, builders, and problem-solvers shaping
+        tomorrow's infrastructure.
+      </p>
     </div>
-  </div>
 
-  <!-- Open Positions -->
-  <div class="py-5">
-    <div class="container text-center">
-      <h2>Open Positions</h2>
-      <div class="d-flex flex-wrap justify-content-center">
-
-        <div class="card" style="width: 18rem;">
-          <img src="img/site.jpeg" class="card-img-top" alt="Site Engineer">
-          <div class="card-body">
-            <h5 class="card-title">Site Engineer</h5>
-            <p class="card-text">Oversee daily construction activities and ensure quality work on-site.</p>
-            <a href="mailto:careers@tcpl.com" class="btn btn-primary">Apply</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="img/structural.jpeg" class="card-img-top" alt="Structural Engineer">
-          <div class="card-body">
-            <h5 class="card-title">Structural Engineer</h5>
-            <p class="card-text">Design and analyze safe, durable, and efficient structures.</p>
-            <a href="mailto:careers@tcpl.com" class="btn btn-primary">Apply</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="img/operator.jpeg" class="card-img-top" alt="Operator">
-          <div class="card-body">
-            <h5 class="card-title">Operator</h5>
-            <p class="card-text">Handle heavy machinery and ensure smooth project execution.</p>
-            <a href="mailto:careers@tcpl.com" class="btn btn-primary">Apply</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="img/staff.jpeg" class="card-img-top" alt="Technical Staff">
-          <div class="card-body">
-            <h5 class="card-title">Technical Staff</h5>
-            <p class="card-text">Support engineering teams with technical expertise and solutions.</p>
-            <a href="mailto:careers@tcpl.com" class="btn btn-primary">Apply</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="img/driver.jpeg" class="card-img-top" alt="Hiva Driver">
-          <div class="card-body">
-            <h5 class="card-title">Hiva Driver</h5>
-            <p class="card-text">Safely transport materials and support logistics on site.</p>
-            <a href="mailto:careers@tcpl.com" class="btn btn-primary">Apply</a>
-          </div>
-        </div>
-
+    <!-- Why Work With Us -->
+    <div class="py-5">
+      <div class="container text-center">
+        <h2>Why Work With Us</h2>
+        <p>
+          At TCPL, we don't just build roads, bridges, and projects — we build
+          opportunities. We believe in teamwork, innovation, and integrity.
+          Whether you are an engineer, project manager, or site worker, your
+          contribution makes a difference.
+        </p>
       </div>
     </div>
-  </div>
 
-  <!-- Culture & Benefits -->
-  <div class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4 text-primary">Culture & Benefits</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="p-4 rounded shadow-sm bg-light h-100">Growth Opportunities</div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-4 rounded shadow-sm bg-light h-100">Training & Skill Development</div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-4 rounded shadow-sm bg-light h-100">Competitive Salary & Benefits</div>
-        </div>
-        <div class="col-md-3">
-          <div class="p-4 rounded shadow-sm bg-light h-100">Safe & Supportive Workplace</div>
+    <!-- Open Positions -->
+    <div class="py-5">
+      <div class="container text-center">
+        <h2>Open Positions</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="img/site.jpeg" class="card-img-top" alt="Site Engineer" />
+            <div class="card-body">
+              <h5 class="card-title">Site Engineer</h5>
+              <p class="card-text">
+                Oversee daily construction activities and ensure quality work
+                on-site.
+              </p>
+              <a href="jobform.html" class="btn btn-primary">Apply</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/structural.jpeg"
+              class="card-img-top"
+              alt="Structural Engineer"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Structural Engineer</h5>
+              <p class="card-text">
+                Design and analyze safe, durable, and efficient structures.
+              </p>
+              <a href="jobform.html" class="btn btn-primary">Apply</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="img/operator.jpeg" class="card-img-top" alt="Operator" />
+            <div class="card-body">
+              <h5 class="card-title">Operator</h5>
+              <p class="card-text">
+                Handle heavy machinery and ensure smooth project execution.
+              </p>
+              <a href="jobform.html" class="btn btn-primary">Apply</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/staff.jpeg"
+              class="card-img-top"
+              alt="Technical Staff"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Technical Staff</h5>
+              <p class="card-text">
+                Support engineering teams with technical expertise and
+                solutions.
+              </p>
+              <a href="jobform.html" class="btn btn-primary">Apply</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="img/driver.jpeg" class="card-img-top" alt="Hiva Driver" />
+            <div class="card-body">
+              <h5 class="card-title">Hiva Driver</h5>
+              <p class="card-text">
+                Safely transport materials and support logistics on site.
+              </p>
+              <a href="jobform.html" class="btn btn-primary">Apply</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Apply Section -->
-  <div class="myapply text-white text-center py-5 ">
-    <div class="container">
-      <h2 class="font-weight-bold">Ready to Join Us?</h2>
-      <p>Send your resume to <a href="mailto:careers@tcpl.com" class="text-warning font-weight-bold">careers@tcpl.com</a> or apply through the form below.</p>
-      <a href="mailto:careers@tcpl.com" class="btn btn-lg btn-light mt-3 font-weight-bold">Apply Now</a>
+    <!-- Culture & Benefits -->
+    <div class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4 text-primary">Culture & Benefits</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="p-4 rounded shadow-sm bg-light h-100">
+              Growth Opportunities
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 rounded shadow-sm bg-light h-100">
+              Training & Skill Development
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 rounded shadow-sm bg-light h-100">
+              Competitive Salary & Benefits
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 rounded shadow-sm bg-light h-100">
+              Safe & Supportive Workplace
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-
+    <!-- Apply Section -->
+    <div class="myapply text-white text-center py-5">
+      <div class="container">
+        <h2 class="font-weight-bold">Ready to Join Us?</h2>
+        <p>
+          Send your resume to
+          <a
+            href="mailto:careers@tcpl.com"
+            class="text-warning font-weight-bold"
+            >careers@tcpl.com</a
+          >
+          or apply through the form below.
+        </p>
+        <a
+          href="jobform.html"
+          class="btn btn-lg btn-light mt-3 font-weight-bold"
+          >Apply Now</a
+        >
+      </div>
+    </div>
 
     <!-- Footer  -->
-   <footer>
-     <div class="footer text-center">
-     <p class="mb-0">© 2025 TCPL. All Rights Reserved.</p>
-     </div>
-   </footer>
+    <footer>
+      <div class="footer text-center">
+        <p class="mb-0">© 2025 TCPL. All Rights Reserved.</p>
+      </div>
+    </footer>
 
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
