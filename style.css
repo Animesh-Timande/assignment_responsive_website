@@ -61,7 +61,7 @@ text-decoration: none;
 }
 
 
-/* Tablets and below */
+/* responsive */
 @media (max-width: 992px) {
   .container2 {
     flex-direction: column;
@@ -88,7 +88,6 @@ text-decoration: none;
   }
 }
 
-/* Mobile devices */
 @media (max-width: 600px) {
   .container1 h2 {
     font-size: 24px;
@@ -174,7 +173,6 @@ text-decoration: none;
   margin: 15px;
 }
 
-/* Why Choose Us */
 .container3 {
   width: 98%;
   text-align: center;
@@ -203,7 +201,7 @@ text-decoration: none;
  
 }
 
-/* ---------- Responsive ---------- */
+/*Responsive */
 @media (max-width: 992px) {
   .container2 {
     flex-direction: column;
@@ -300,18 +298,18 @@ text-decoration: none;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
-  padding: 20px;
+  padding: 19px;
   cursor:pointer;
    background-color: rgba(153, 233, 225, 0.377);
 }
 
 .box1bot img {
-  width: 330px;
+  width: 300px;
   height: 220px;
   border-radius: 12px;
   background: white;
   border: 1px solid rgb(199, 195, 195);
-  padding: 15px;
+  padding: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
  
