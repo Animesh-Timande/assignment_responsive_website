@@ -1,118 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    overflow-x: hidden;
-    background: linear-gradient(to right, rgb(236, 136, 136), rgb(231, 231, 135), pink, rgb(226, 192, 129), rgb(130, 233, 130));
-}
-
-ul {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  
-}
-
-li {
-    list-style-type: none;
-}
-
-li a {
-    text-decoration: none;
-    color: rgb(222, 245, 245);                
-    font-size: 18px;
-    font-weight: 700;             
-    letter-spacing: 1px;
-    padding: 5px 10px;
-}
-
-li a:hover {
-    color: rgb(245, 234, 234);               
-    border-bottom: 2px solid white;
-    transform: translateY(2px); 
-}
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right,
+    rgb(236,136,136),rgb(231,231,135),pink,rgb(226,192,129),rgb(130,233,130));
+  }
 
 .navbar-brand img {
-    width: 110px;
-    margin-left: 20px;
-    border-radius: 10px;
+  width: 100px;
+  border-radius: 8px;
 }
 
-/* footer */
-.list li a{ 
-  color: white;
-  padding: 10px;
-text-decoration: none;
-
+.navbar-menu {
+  display: flex;
+  gap: 20px;
 }
-.list li a:hover{ 
+
+.navbar-menu li {
+  list-style: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
   color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: black;
+  background:white;
+}
+
+footer {
+  background: black;
+  color:white;
+  padding: 25px 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.links li {
+  list-style: none;
+ 
+}
+
+.links li a{
+  color:white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links li a:hover{
+  color:rgb(240, 240, 70);
   font-weight: 500;
 }
 
-
-/* responsive */
-@media (max-width: 992px) {
-  .container2 {
+@media (max-width: 768px) {
+  .navbar-menu {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .container2_1,
-  .container2_2 {
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
     width: 100%;
+    display: none; 
+    padding: 15px 0;
+  }
+
+  .navbar-menu.show {
+    display: flex; 
+  }
+
+  .navbar-menu li {
     margin: 10px 0;
-  }
-
-  .box {
-    width: 90%;
-  }
-
-  .container1 {
-    margin: 120px 20px 50px;
-  }
-
-  .container3 ul li {
-    font-size: 16px;
-    padding: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container1 h2 {
-    font-size: 24px;
-  }
-
-  .container1 p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .container3 ul li {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .navbar-brand img {
-    width: 90px;
-  }
-
-  .navbar-nav {
     text-align: center;
   }
 
-  .navbar-nav li {
-    margin-bottom: 8px;
+  .navbar-brand img {
+    width: 85px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar-menu li a {
+    font-size: 15px;
+  }
+
+  .links li a {
+    font-size: 14px;
   }
 }
 
@@ -250,7 +256,7 @@ text-decoration: none;
 .containerServ p {
   font-size: 18px;
   margin-top: 12px;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -321,19 +327,14 @@ text-decoration: none;
 
 
 /* reponsive  */
-
-/* Devices up to 992px wide (Tablets and small laptops) */
 @media (max-width: 992px) {
-  .box1bot {
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
+  .containerServ h1 {
+    font-size: 32px;
   }
 
-  .box1bot img {
-    width: 45%;
-    height: auto;
-    padding: 12px;
+  .containerServ p {
+    font-size: 16px;
+    width: 90%;
   }
 
   .box1hed h3 {
@@ -344,34 +345,38 @@ text-decoration: none;
     font-size: 15px;
   }
 
-  .containerSer {
-    gap: 30px;
-    padding: 15px;
+  .box1bot {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .box1bot img {
+    width: 45%;
+    height: auto;
   }
 
   .contactbtn h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .contactbtn .btn {
     font-size: 18px;
-    padding: 12px 24px;
+    padding: 10px 20px;
   }
 }
 
-/* Devices up to 600px wide (Mobile phones) */
 @media (max-width: 600px) {
-  .box1bot {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 10px;
+  .containerServ {
+    padding: 30px 15px;
   }
 
-  .box1bot img {
-    width: 90%;
-    height: auto;
-    padding: 10px;
+  .containerServ h1 {
+    font-size: 26px;
+  }
+
+  .containerServ p {
+    font-size: 14px;
+    width: 100%;
   }
 
   .box1hed h3 {
@@ -382,24 +387,31 @@ text-decoration: none;
     font-size: 14px;
   }
 
-  .containerSer {
-    gap: 20px;
-    padding: 10px;
+  .box1bot {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .box1bot img {
+    width: 90%;
+    height: auto;
   }
 
   .contactbtn h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 10px;
   }
 
   .contactbtn .btn {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 8px 18px;
+  }
+
+  footer p {
+    font-size: 14px;
   }
 }
-
-
-
 
 /* Contact Button */
 .contactbtn {
@@ -451,10 +463,33 @@ text-decoration: none;
     .myapply{
       background: linear-gradient(rgb(9, 148, 148), rgb(23, 143, 23));
     }
-    
- /* jobform */
- 
+    /* responsive  */
   
+    @media (max-width: 992px) {
+    .card {
+      width: 48%;     
+      margin: 10px 1%;
+    }
+
+    .myapply {
+      padding: 20px;
+      font-size: 18px;
+    }
+    }
+    @media (max-width: 600px) {
+      .card {
+        width: 95%;       /* 1 card per row */
+        margin: 10px auto;
+      }
+
+      .myapply {
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+ /* jobform */
     .btn_two {
       position: absolute;
       top: 5px;
@@ -464,7 +499,7 @@ text-decoration: none;
 
     .btn_two a {
       text-decoration: none;
-      color: #333;
+      color: black;
     }
 
     .btn_two a:hover {
@@ -495,19 +530,85 @@ text-decoration: none;
   width: 500px;   
   height: 500px;      
 }
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
+  .containerServ h1 {
+    font-size: 32px;
+  }
 
-@media (max-width: 768px) {
+  .containerServ p {
+    font-size: 16px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .touch h2 {
+    font-size: 24px;
+  }
+
+  .touch input,
+  .touch textarea {
+    font-size: 16px;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
   .map {
-    max-width: 90%;  
+    max-width: 90%;
     height: 400px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 600px) {
+  .containerServ {
+    padding: 30px 15px;
+  }
+
+  .containerServ h1 {
+    font-size: 26px;
+  }
+
+  .containerServ p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .touch h2 {
+    font-size: 20px;
+  }
+
+  .touch input,
+  .touch textarea {
+    font-size: 14px;
+  }
+
+  .touch .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 14px;
+  }
+
+  .map {
+    max-width: 100%;
+    height: 300px;
+    margin: 15px auto;
   }
 }
 
-@media (max-width: 576px) {
-  .map {
-    max-width: 100%;
-    height: 300px;    
-  }
 
 
 
